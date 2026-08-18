@@ -1,0 +1,68 @@
+{
+  "name": "chapter-jumper",
+  "displayName": "Chapter Jumper",
+  "description": "Jump through chapter sections in text documents",
+  "version": "0.8.0",
+  "publisher": "katalog",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/katalog/vscode-chapter-jumper"
+  },
+  "engines": {
+    "vscode": "^1.107.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "configuration": {
+      "title": "Chapter Jumper Settings",
+      "properties": {
+        "chapterNavigator.chapterPattern": {
+          "type": "string",
+          "default": "^제\\s*\\d+\\s*장",
+          "description": "장을 인식하기 위한 정규표현식 패턴입니다. (기본값: 제N장)"
+        },
+        "chapterNavigator.quarters": {
+            "type": "integer",
+            "default": 4,
+            "minimum": 2,
+            "description": "한 장을 몇 등분할지 지정합니다. 기본값 4 (4등분)."
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "chapter-jumper.moveNextQuarter",
+        "title": "Move to Next Quarter Chapter"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "chapter-jumper.moveNextQuarter",
+        "key": "ctrl+pagedown",
+        "when": "editorTextFocus"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.107.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "typescript-eslint": "^8.48.1",
+    "eslint": "^9.39.1",
+    "typescript": "^5.9.3",
+    "@vscode/test-cli": "^0.0.12",
+    "@vscode/test-electron": "^2.5.2"
+  }
+}
