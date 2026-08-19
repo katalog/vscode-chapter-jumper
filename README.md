@@ -37,7 +37,9 @@ If no line in the document matches `chapterNavigator.chapterPattern`, the comman
 
 ## Installation
 
-Not yet published on the VS Code Marketplace. To build and run it from source:
+Search for **Chapter Jumper** in the VS Code Extensions view, or install it from the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=katalog.chapter-jumper).
+
+To build and run it from source instead:
 
 ```bash
 git clone https://github.com/katalog/vscode-chapter-jumper.git
