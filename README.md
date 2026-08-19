@@ -48,16 +48,6 @@ npm run compile
 
 Then open the folder in VS Code and press `F5` to launch an Extension Development Host with the extension active, or package it yourself with [`vsce`](https://github.com/microsoft/vscode-vsce) and install the resulting `.vsix` via **Extensions: Install from VSIX...**.
 
-## Release Notes
-
-### 1.0.0
-
-Stable release — no functional changes from 0.8.0.
-
-### 0.8.0
-
-Initial release: quarter-point chapter navigation with configurable pattern and split count.
-
 ## License
 
 See [LICENSE](LICENSE).
