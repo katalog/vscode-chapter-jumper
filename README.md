@@ -50,6 +50,10 @@ Then open the folder in VS Code and press `F5` to launch an Extension Developmen
 
 ## Release Notes
 
+### 1.0.0
+
+Stable release — no functional changes from 0.8.0.
+
 ### 0.8.0
 
 Initial release: quarter-point chapter navigation with configurable pattern and split count.

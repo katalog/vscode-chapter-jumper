@@ -2,7 +2,7 @@
   "name": "chapter-jumper",
   "displayName": "Chapter Jumper",
   "description": "Jump through chapter sections in text documents",
-  "version": "0.8.0",
+  "version": "1.0.0",
   "publisher": "katalog",
   "repository": {
     "type": "git",
